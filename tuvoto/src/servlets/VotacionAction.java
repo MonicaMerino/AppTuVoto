@@ -60,7 +60,6 @@ public class VotacionAction extends HttpServlet {
 		String rutaGrafico = "WebContent/data/grafico.jpeg";
 		File f = new File(rutaGrafico);
 		if (f.exists()) {
-
 			f.delete();
 		}
 		DefaultPieDataset data = new DefaultPieDataset();

@@ -68,14 +68,14 @@ function validarForm(){
 //Funciones mostrar datos/modificar datos
 
 function cambioDatos(){
-	document.getElementById("datosUsuario").style.display("none");
-	document.getElementById("modDatosUsuario").style.display("inline");
+	document.getElementById("datosUsuario").style.display="none";
+	document.getElementById("modDatosUsuario").style.display="inline";
 	
 }
 
 function mostrarDatos(){
-	document.getElementById("modDatosUsuario").style.display("none");
-	document.getElementById("datosUsuario").style.display("inline");
+	document.getElementById("modDatosUsuario").style.display="none";
+	document.getElementById("datosUsuario").style.display="inline";
 	
 }
 

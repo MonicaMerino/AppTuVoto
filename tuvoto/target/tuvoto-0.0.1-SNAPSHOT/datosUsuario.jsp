@@ -98,7 +98,7 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-6">
 						<div class="banner_content text-center">
-							<h2>Modifica tus datos</h2>
+							<h2>Mi perfil</h2>
 						</div>
 					</div>
 				</div>
@@ -136,12 +136,10 @@
 		<c:set var="usuario" value="${requestScope.usuario}" />
 
 		<div id='datos-user-p'>
-
-			<center>
-				<h2>Mi perfil</h2>
-			</center>
 			<!-- 			mostrar datos de usuario -->
+
 			<span id="datosUsuario">
+				</br>
 				<p>Bienvenid@ ${usuario.nombre } ${usuario.apellidos }</p>
 				<p>${usuario.identificador }:${usuario.idUsuario }</p>
 				<p>Provincia: ${usuario.provincia }</p>
@@ -150,9 +148,11 @@
 			</span>
 
 			<!-- modificar datos usuario  -->
-			<!-- 				<div class="col-lg-4 offset-lg-1"> -->
 			<div class="register_form">
 				<span id="modDatosUsuario">
+				<center>
+					<h2>Modifica tus datos</h2>
+				</center>
 					<form class="form_area" id="myForm"
 						action="Controller?op=doModificarUsuario" method="post"
 						onsubmit="return validarForm();">
@@ -288,7 +288,7 @@
 	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
 	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/owl-carousel-thumb.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
+	 
 	<script src="js/eventos_jquery.js"></script>
 	<script src="js/eventos.js"></script>
 	<script

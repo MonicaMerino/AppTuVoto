@@ -343,7 +343,7 @@
 	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
 	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/owl-carousel-thumb.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
+	 
 	 
 	<script src="js/eventos_jquery.js"></script>
 	<!--gmaps Js-->

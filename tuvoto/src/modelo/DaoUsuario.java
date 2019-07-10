@@ -17,7 +17,6 @@ public class DaoUsuario {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -58,9 +57,10 @@ public class DaoUsuario {
 	private boolean existeIdUsuario(String idUsuario) {
 		boolean res= false;
 		try (Connection cn = DriverManager.getConnection(cadenaConexion, user, pwd);) {
-			String sql = "select idUsuario from usuarios where idUsuario=" + idUsuario;
-			Statement st = cn.createStatement();
-			ResultSet rs = st.executeQuery(sql);
+			String sql = "select idUsuario from usuarios where idUsuario=?";
+			PreparedStatement ps = cn.prepareStatement(sql);
+			ps.setString(1, idUsuario);
+			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
 				if (idUsuario.equals(rs.getString(idUsuario))) {
 					res= true;

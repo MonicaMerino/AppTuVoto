@@ -92,63 +92,75 @@
 
 
   <!--================ Start Registration Area =================-->
-  <centre>
-    <div class="formadmin">
+ 	<center>
+	<div id= "form-partidospol" class="formadmin">
 
 
-      <div>
+		<div>
 
-        <div class="register_form">
-          <h3>Modificar partido</h3>
+			<div class="register_form">
+				<h3>Modificar partido</h3>
 
-          <form class="form_area" id="myForm" action="Controller?op=doModificarPartido" method="post">
-            <div class="row">
-              <div class="col-lg-12 form_group">
-                <input name="idPartido" placeholder="Nombre del partido" required="" type="text" />
-                <input name="informacion" placeholder="Información" required="" type="textarea" />
-                <input name="imagen" placeholder="Imagen" required="" type="text">
-              </div>
-              <div class="col-lg-12 text-center">
-                <button class="primary-btn">Modificar</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="register_form">
-          <h3>Alta/Baja partido</h3>
+				<form class="form_area" id="myForm"
+					action="Controller?op=doModificarPartido" method="post">
+					<div class="row">
+						<div class="col-lg-12 form_group">
+							<input name="idPartido" placeholder="Nombre del partido"
+								required="" type="text" /> <input name="informacion"
+								placeholder="Información" required="" type="textarea" /> <input
+								name="imagen" placeholder="Imagen" required="" type="text">
+						</div>
+						<div class="col-lg-12 text-center">
+							<button class="primary-btn">Modificar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div></div>
+			<div class="register_form">
+				<h3>Alta partido</h3>
 
-          <form class="form_area" id="myForm" action="Controller?op=doAltaPartido" method="post">
-            <div class="row">
-              <div class="col-lg-12 form_group">
-                <input name="idPartido" placeholder="Nombre del partido" required="" type="text" />
-                <input name="informacion" placeholder="Información" required="" type="textarea" />
-                <input name="imagen" placeholder="Imagen" required="" type="text">
+				<form  class="form_area" id="myForm"
+					action="Controller?op=doAltaPartido" method="post">
+					<div class="row">
+						<div class="col-lg-12 form_group">
+							<input name="idPartido" placeholder="Nombre del partido"
+								required="" type="text" /> <input name="informacion"
+								placeholder="Información" required="" type="textarea" /> <input
+								name="imagen" placeholder="Imagen" required="" type="text">
 
-              </div>
-              <div class="col-lg-12 text-center">
-                <button class="primary-btn">Alta</button>
-              </div>
+						</div>
+						<div class="col-lg-12 text-center">
+							<button class="primary-btn">Alta</button>
+						</div>
 
-            </div>
-          </form>
+					</div>
+				</form>
+			</div>
+			<div class="register_form">
+				<h3>Baja partido</h3>
+				<form  class="form_area" id="myForm"
+					action="Controller?op=doBajaPartido" method="post">
+					<div class="row">
+						<div class="col-lg-12 form_group">
+							<input name="idPartido" placeholder="Nombre del partido"
+								required="" type="text" />
+						</div>
+						<div class="col-lg-12 text-center">
+							<button class="primary-btn">Baja</button>
+						</div>
 
-          <form class="form_area" id="myForm" action="Controller?op=doBajaPartido" method="post">
-            <div class="row">
-              <div class="col-lg-12 form_group">
-                <input name="idPartido" placeholder="Nombre del partido" required="" type="text" />
-              </div>
-              <div class="col-lg-12 text-center">
-                <button class="primary-btn">Baja</button>
-              </div>
+					</div>
+				</form>
+			</div>
+		</div>
 
-            </div>
-          </form>
+	</div>
 
-        </div>
-
-      </div>
-
-    </div>
+	</div>
+	</center>
+	</br>
+	</br>
 
     <!--================ End Registration Area =================-->
     <!--================ Start footer Area  =================-->
@@ -230,7 +242,7 @@
     <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/owl-carousel-thumb.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
+     
      
     <!--gmaps Js-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>

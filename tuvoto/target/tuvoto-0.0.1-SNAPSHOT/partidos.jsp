@@ -115,7 +115,7 @@
 								<div class="blog_post">
 									<form
 										action="Controller?op=doVota&idPartido=<%=partidos.get(i).getIdPartido()%>"
-										, method="post">
+										 method="post">
 										<img src="<%=partidos.get(i).getImagen()%>" alt="">
 										<div class="blog_details">
 											<h2><%=partidos.get(i).getIdPartido()%></h2>
@@ -352,7 +352,7 @@
 	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
 	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/owl-carousel-thumb.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
+	 
 	 
 	<script src="js/eventos.js"></script>
 	<!--gmaps Js-->
