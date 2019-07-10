@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="icon" href="img/favicon.png" type="image/png" />
+<title>Login</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/flaticon.css" />
+<link rel="stylesheet" href="css/themify-icons.css" />
+<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+<!-- main css -->
+<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<!--================ Start Header Menu Area =================-->
+	<header class="header_area white-header">
+		<div class="main_menu">
+			<div class="search_input" id="search_input_box">
+				<div class="container">
+					<form class="d-flex justify-content-between" method="post"
+						action="Controller?op=doBuscar">
+						<input name="idPartido" type="text" class="form-control"
+							id="search_input" placeholder="Search Here" />
+						<button type="submit" class="btn"></button>
+						<span class="ti-close" id="close_search" title="Close Search"></span>
+					</form>
+				</div>
+			</div>
+
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand" href="Controller?op=doVerificar"> <img
+						class="logo-2" src="img/tuvoto.png" alt="" />
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset"
+						id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item"><a class="nav-link"
+								href="Controller?op=doVerificar">Home</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="Controller?op=toAcceso">Login</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="Controller?op=Inicio">Vota</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="Controller?op=toAcerca">Acerca de</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="Controller?op=toContacta">Contacta</a></li>
+							<li class="nav-item"><a href="#" class="nav-link search"
+								id="search"> <i class="ti-search"></i>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Menu Area =================-->
+
+	<!--================Home Banner Area =================-->
+	<section class="banner_area">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="banner_content text-center">
+							<h2>Accede y vota</h2>
+							<div class="page_link">
+								<a href="vota.html">VOTA</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Home Banner Area =================-->
+
+	<!--================ Start About Area =================-->
+	<section class="about_area section_gap">
+		<div class="container">
+			<div class="row h_blog_item">
+				<div class="col-lg-6">
+					<div class="h_blog_img">
+						<img class="img-fluid" src="img/elecciones.jpg" alt="" />
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="h_blog_text">
+						<div class="h_blog_text_inner left right">
+							<h4>Últimos sondeos</h4>
+							<p>El mayor sondeo sobre las elecciones generales 2019 da
+								mayoría a la izquierda. La encuesta de GAD3 (RTVE y FORTA),
+								otorga entre 116 y 121 diputados al PSOE (28,10%) y entre 42 y
+								45 a Unidas Podemos (16,10%), con lo que ambos partidos sumarían
+								entre 158 y 166 diputados en el Congreso de los Diputados, por
+								debajo de los 175 escaños a partir de la cual hay mayoría
+								absoluta.</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Area =================-->
+	<!--================ Start Registration Area =================-->
+	<div class="section_gap registration_area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-7">
+					<div class="row clock_sec clockdiv" id="clockdiv">
+						<div class="col-lg-12">
+							<h1 class="mb-3">Login</h1>
+							</br>
+							<p>Accede con tu usuario y contraseña y podrás votar. Ahora
+								es más fácil que nunca. En dos pasos tu opinión será útil.</p>
+
+							<p>No olvides que sólo podrás votar una vez. Una vez hayas
+								votado, podrás ver cómo van los resultados de las elecciones.</p>
+							</br>
+							<p>¿Aún no sabes a qué partido votar?</p>
+							</br>
+
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-4 offset-lg-1">
+					<div class="register_form">
+						<h3>Login</h3>
+
+						<form class="form_area" id="myForm" action="Controller?op=doLogin"
+							method="post">
+							<div class="row">
+								<div class="col-lg-12 form_group">
+									<br> <input autofocus="autofocus" name="email" placeholder="Email"
+										pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+										required="" type="email" /> <input name="password"
+										placeholder="Contraseña" required="" type="password">
+								</div>
+								<div class="col-lg-12 text-center">
+									<button class="primary-btn">Accede</button>
+								</div>
+								</br>
+								<p>
+									¿Aún no estás registrado?<a href="login.html">Regístrate</a>
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================ End Registration Area =================-->
+
+
+
+
+	<!--================ Start Testimonial Area =================-->
+	<div class="testimonial_area section_gap">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-5">
+					<div class="main_title">
+						<h2 class="mb-3">Opiniones</h2>
+						<p>Porque cuente</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="testi_slider owl-carousel">
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<img src="img/testimonials/t1.jpg" alt="" />
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Miguel Rubio</h4>
+									<p>Antes me costaba ir a votar. A día de hoy, es tan
+										sencillo, que con tan solo un click, desde casa o desde el
+										trabajo, puedo dar mi opinión</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<img src="img/testimonials/t2.jpg" alt="" />
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Antonio López</h4>
+									<p>Por fin se actualiza la democracia. Esto es un gran paso
+										para todos. Así nadie puede tener la escusa de "no ir" a
+										votar.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<img src="img/testimonials/t3.jpg" alt="" />
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Silvia Cruz</h4>
+									<p>Me encanta la página, especialmente el hecho de tener
+										información sobre los partidos y sus políticas. Votar ahora es
+										más fácil que nunca</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<img src="img/testimonials/t5.jpg" alt="" />
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Plácido Hernández</h4>
+									<p>Por mucha tecnología nueva, el problema es que nuestros
+										políticos, si es que algún día llegan a serlo, siguen mirando
+										más por ellos mismos que por nosotros</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<img src="img/testimonials/t6.jpg" alt="" />
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Mei Wang</h4>
+									<p>Me encantan los avances de este país. Creo que China
+										tendría que preocuparse más por sus ciudadanos. España es un
+										modelo a seguir</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<img src="img/testimonials/t4.jpg" alt="" />
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Vicenta Garcia</h4>
+									<p>Al principio me parecía un mundo difícil, pero mis
+										nietos me enseñaron a utilizar internet y hay que reconocer
+										que es un gran avance.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================ End Testimonial Area =================-->
+
+	<!--================ Start footer Area  =================-->
+
+	<footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Información</h4>
+					<ul>
+						<li><a href="Controller?op=toAcerca">Acerca de </a></li>
+						<li><a href="Controller?op=toContacta">Contacto</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Condiciones</h4>
+					<ul>
+						<li><a href="Controller?op=toAviso">Aviso legal</a></li>
+						<li><a href="Controller?op=toPolitica">Política de
+								privacidad</a></li>
+						<li><a href="Controller?op=toCookies">Cookies</a></li>
+
+					</ul>
+				</div>
+
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Recursos</h4>
+					<ul>
+						<li><a target="_blank"
+							href="https://www.lamoncloa.gob.es/Paginas/index.aspx">La
+								Moncloa</a></li>
+						<li><a target="_blank"
+							href="http://www.casareal.es/ES/Paginas/home.aspx">La Casa
+								Real</a></li>
+						<li><a target="_blank" href="https://www.europapress.es/">Noticias</a></li>
+						<li><a target="_blank"
+							href="http://www.aemet.es/es/eltiempo/prediccion/municipios">El
+								tiempo</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-6 single-footer-widget">
+					<h4>Newsletter</h4>
+					<p>Sigue toda la información sobre nuestros políticos</p>
+					<div class="form-wrap" id="mc_embed_signup">
+						<form target="_blank"
+							action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+							method="get" class="form-inline">
+							<input class="form-control" name="EMAIL"
+								placeholder="Your Email Address" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Your Email Address'" required=""
+								type="email" />
+							<button class="click-btn btn btn-default">
+								<span>Suscríbete</span>
+							</button>
+							<div style="position: absolute; left: -5000px;">
+								<input name="b_36c4fd991d266f23781ded980_aefe40901a"
+									tabindex="-1" value="" type="text" />
+							</div>
+
+							<div class="info"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row footer-bottom d-flex justify-content-between">
+				<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					All rights reserved | This page is made <i class="ti-heart"
+						aria-hidden="true"></i> by Mónica Merino del Real
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</p>
+				<div class="col-lg-4 col-sm-12 footer-social">
+					<a target="_blank" href="https://www.facebook.com/"><i
+						class="ti-facebook"></i></a> <a target="_blank"
+						href="https://twitter.com/"><i class="ti-twitter"></i></a> <a
+						target="_blank" href="https://www.linkedin.com/feed/"><i
+						class="ti-linkedin"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================ End footer Area  =================-->
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/owl-carousel-thumb.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	 
+	<script src="js/eventos.js"></script>
+	<!--gmaps Js-->
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+/*Formulario modificación datos*/
+.formadmin {
+	background-color: rgb(245, 194, 26);
+	color: black;
+	margin: 1%;
+	padding: 1%;
+	
+}
+#form-datos-usuario{
+	padding-bottom:1%;
+}
+
+/*Datos del usuario*/
+#datos-user-p{
+	float:left;
+	margin-top: 2%;
+	padding-top: 1%;
+	text-decoration: none;
+}
+#img-space{
+	width: 100%;
+	
+}
+/*Boton modificar datos*/
+#botonCambio{
+	width:33%;
+	left:30%;
+}
+#modDatosUsuario{
+	display:none;
+}
+
+/*Aviso de cookies*/
+div#cookies {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(177, 154, 172, 0.8);
+	padding-top: 2%;
+	color: black;
+	z-index: 200;
+}
+
+div button {
+	position: absolute;
+	float: right;
+	right: 0;
+}
+
+#teoria {
+	margin: 3%;
+}
+
+/*Leer más de los partidos políticos*/
+.more {
+	cursor: pointer;
+	background-color: #ccf;
+}
+
+.text-comment {
+	overflow-wrap: break-word;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 500px;
+	height: 5.2em;
+	white-space: nowrap;
+}
+
+.textoCompleto {
+	height: auto;
+	width: auto;
+	white-space: normal;
+}
+
+/*Leer más de los partidos políticos*/
+#mivoto {
+	border-collapse: separate;
+	border-top: 1px;
+	border-color: black;
+}
+/*Tabla votaciones*/
+.col {
+	margin: 15px;
+	padding: 15px;
+	background-color: white;
+}
+
+/*Formulario votaciones*/
+#form-res-vot {
+	padding: 4%;
+}
+
+/*SideBar Datos usuario*/
+.wrapper {
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.wrapper {
+	display: flex;
+	align-items: stretch;
+}
+
+#sidebar {
+	min-width: 250px;
+	max-width: 250px;
+}
+
+#sidebar.active {
+	margin-left: -250px;
+}
+
+/*Desplegables de estilo*/
+a[data-toggle="collapse"] {
+	position: relative;
+}
+
+.dropdown-toggle::after {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+}
+
+/* Especial para las pantallas pequeñas*/
+@media ( max-width : 768px) {
+	#sidebar {
+		margin-left: -250px;
+	}
+	#sidebar.active {
+		margin-left: 0;
+	}
+}
+
+/*Tamaño del side bar a la altura de la pantalla*/
+#sidebar {
+	min-width: 250px;
+	max-width: 250px;
+	min-height: 55vh;
+	max-height: 55vh
+}
+
+@import
+	"https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #fafafa;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1em;
+	font-weight: 300;
+	line-height: 1.7em;
+	color: #999;
+}
+
+a, a:hover, a:focus {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+#sidebar {
+	background: #fcdf3f;
+	color: blue;
+	transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+	padding: 20px;
+	color: #fcdf3f;
+	background: #debd03;
+}
+
+#sidebar ul.components {
+	padding: 20px 0;
+	border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+	color: #fff;
+	padding: 10px;
+}
+
+#sidebar ul li a {
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
+}
+
+#sidebar ul li a:hover {
+	color: #7386D5;
+	background: #fff;
+}
+
+#sidebar ul li.active>a, a[aria-expanded="true"] {
+	color: #fff;
+	background: #6d7fcc;
+}
+
+ul ul a {
+	font-size: 0.9em !important;
+	padding-left: 30px !important;
+	background: #6d7fcc;
+}
