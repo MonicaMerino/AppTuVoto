@@ -11,6 +11,15 @@
 <meta charset="utf-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	
+<!--  Invalida caches -->
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<!--  Fin Invalida caches -->
+
 <link rel="icon" href="img/favicon.png" type="image/png" />
 <title>Acerca</title>
 <!-- Bootstrap CSS -->
